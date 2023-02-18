@@ -1,5 +1,14 @@
 {
+  "name": "my-project",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
   "dependencies": {
     "reveal.js": "^4.4.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
   }
 }

@@ -1,0 +1,20 @@
+.slides {
+  color: #fff !important;
+}
+
+.slide1 {
+  z-index: 2147483647;
+}
+
+p {
+  font-size: 1.3rem !important;
+}
+
+.createdSlide {
+  text-align: left;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr !important;
+  display: grid !important;
+}
+
+/*# sourceMappingURL=index.9e4c6fd2.css.map */

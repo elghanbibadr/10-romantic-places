@@ -1,4 +1,10 @@
+Reveal.initialize(
+  {
+    stretch: true,
+     hash:true,
+  }
 
+);
 
 const slideshow_topics_url = 'https://vs.contentportal.link/items/slideshow_topics';
 const slideshow_slides_url = 'https://vs.contentportal.link/items/slideshow_slides/';
@@ -40,11 +46,9 @@ const createSlideShow = async () => {
 
   // filter the list of slidesshow to get only the slides relevent to 10 romantic places data
 const slideForTheCurrentSlidShow = slideShowSlides.filter(element => slideshow_slides.includes(element.id))
-console.log(slideForTheCurrentSlidShow)
    slideForTheCurrentSlidShow.forEach((element) => { 
     // iterat over the slideShowSlides and map their data to a slider section
       const currentSlide=document.getElementById(element.id)
-      console.log(currentSlide)
       currentSlide.innerHTML=`
         <p >${element.content_text}</p>
       <img  src=${imagesUrl+element.image}>     
